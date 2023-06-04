@@ -1,10 +1,10 @@
 :root {
-  /*! +++++++++++++++++++++++++++++++
-  /*? CUSTOM PROPERTIES
-  /*! ++++++++++++++++++++++++++++ */
+  /* ? +++++++++++++++++++++++++++++
+     ! CUSTOM PROPERTIES
+    ? ++++++++++++++++++++++++++++ */
 
-  /*? ITEM: 
-  /*! logo color  */
+  /* ? ITEM: 
+  /* ! logo color  */
   --brand-logo-color: #4d5ae5;
 
   /* todo:
@@ -50,9 +50,9 @@
   --portfolio-item-border-color: #e7e9fc;
 }
 
-/*! +++++++++++++++++++++++++++++++
-/*? COMMON PROPERTIES
-/*! ++++++++++++++++++++++++++++ */
+/* ? ++++++++++++++++++++++++++++
+   ! COMMON PROPERTIES
+  ? ++++++++++++++++++++++++++++ */
 
 body {
   font-family: "Roboto", sans-serif;
@@ -160,6 +160,7 @@ img {
 .address-link,
 .features-item-text,
 .team-item-text,
+.projects-cover-text,
 .project-item-text,
 .footer-slogan-text,
 .footer-socials-text {
@@ -168,9 +169,9 @@ img {
   letter-spacing: 0.02em;
 }
 
-/*! +++++++++++++++++++++++++++++
+/* ! +++++++++++++++++++++++++++++
     HEADER: STUDIO Page
-/*! ++++++++++++++++++++++++++++ */
+  ! ++++++++++++++++++++++++++++ */
 
 .header {
   border-bottom: 1px solid var(--header-border-color);
@@ -255,9 +256,9 @@ img {
   color: var(--links-color-hover);
 }
 
-/*! +++++++++++++++++++++++++++++
+/* ! +++++++++++++++++++++++++++++
     MAIN: STUDIO Page
-/*! ++++++++++++++++++++++++++++ */
+  ! ++++++++++++++++++++++++++++ */
 
 /* SECTION: Hero */
 
@@ -488,9 +489,9 @@ img {
   fill: currentColor;
 }
 
-/*! +++++++++++++++++++++++++++++
+/* ! +++++++++++++++++++++++++++++
     FOOTER: STUDIO Page
-/*! ++++++++++++++++++++++++++++ */
+  ! ++++++++++++++++++++++++++++ */
 
 .footer {
   padding: 100px 0;
@@ -565,9 +566,9 @@ img {
   background-color: var(--footer-social-link-bg-color-hover);
 }
 
-/*! +++++++++++++++++++++++++++++
+/* ! +++++++++++++++++++++++++++++
     MAIN: PORTFOLIO Page
-/*! ++++++++++++++++++++++++++++ */
+  ! +++++++++++++++++++++++++++++ */
 
 /* SECTION Projects */
 
@@ -606,6 +607,8 @@ img {
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+/* TODO: animation & effects 
+    
 /* LIST: Cards */
 
 .projects-list {
@@ -625,6 +628,27 @@ img {
   background-color: var(--portfolio-project-item-bg-color);
 }
 
+.projects-cover-wrap {
+  position: relative;
+  overflow: hidden;
+}
+
+.projects-cover-text {
+  position: absolute;
+  top: 0;
+  display: block;
+  height: 100%;
+  padding: 40px 32px;
+  color: #F4F4FD;
+  background-color: #4D5AE5;
+  transform: translateY(100%);
+  transition: transform 250ms linear;
+}
+
+.projects-item-link:hover .projects-cover-text {
+  transform: translateY(0);
+}
+
 .projects-item-link:hover,
 .projects-item-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -637,4 +661,54 @@ img {
   color: var(--body-text-color);
   border: 1px solid var(--portfolio-item-border-color);
   border-top: none;
+}
+
+/* ? -----------------------------
+  TODO: animations & effects
+
+  MODAL box
+  ? ---------------------------- */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100vH;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+
+.modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 408px;
+  height: 584px;
+  background: #FCFCFC;
+  padding: 24px;
+  border-radius: 4px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.modal-close-btn {
+  display: block;
+  margin-left: auto;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  background: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+}
+
+.close-btn-icon {
+  width: 100%;
+  height: 100%;
+  fill: #2E2F42;
+}
+
+.is-hidden {
+  pointer-events: none;
+  opacity: 0;
+  visibility: hidden;
 }
