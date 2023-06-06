@@ -14,6 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&family=Roboto:wght@400;500;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -89,40 +90,42 @@
 
                     <!-- ITEM: Button -->
                     <li class="projects-item-btn">
-                        <button class="projects-btn btn" type="button">All</button>
+                        <button class="projects-btn btn" type="button"><span>All</span></button>
                     </li>
 
                     <!-- ITEM: Button -->
                     <li class="projects-item-btn">
-                        <button class="projects-btn btn" type="button">Web Site</button>
+                        <button class="projects-btn btn" type="button"><span>Web Site</span></button>
                     </li>
 
                     <!-- ITEM: Button -->
                     <li class="projects-item-btn">
-                        <button class="projects-btn btn" type="button">App</button>
+                        <button class="projects-btn btn" type="button"><span>App</span></button>
                     </li>
 
                     <!-- ITEM: Button -->
                     <li class="projects-item-btn">
-                        <button class="projects-btn btn" type="button">Design</button>
+                        <button class="projects-btn btn" type="button"><span>Design</span></button>
                     </li>
 
                     <!-- ITEM: Button -->
                     <li class="projects-item-btn">
-                        <button class="projects-btn btn" type="button">Marketing</button>
+                        <button class="projects-btn btn" type="button"><span>Marketing</span></button>
                     </li>
                 </ul>
 
                 <!-- LIST: Cards list -->
                 <ul class="projects-list list">
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-1.jpg"
                                     alt="Examples of app pages" width="360" height="360">
-                                <p class="projects-cover-text">14 Stylish and User-Friendly App Design Concepts · Task
-                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
+                                <p class="projects-cover-text">14 Stylish and User-Friendly App Design Concepts ·
+                                    Task
+                                    Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage
+                                    App
                                 </p>
                             </div>
                             <div class="projects-item-desc">
@@ -132,7 +135,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-2.jpg"
@@ -148,7 +151,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-3.jpg"
@@ -164,7 +167,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-4.jpg"
@@ -180,7 +183,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-5.jpg"
@@ -196,7 +199,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-6.jpg"
@@ -212,7 +215,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-7.jpg"
@@ -228,7 +231,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-8.jpg"
@@ -244,7 +247,7 @@
                         </a>
                     </li>
                     <!-- ITEM: Card -->
-                    <li class="projects-list-item">
+                    <li class="projects-list-item" data-aos="zoom-in">
                         <a class="projects-item-link link" href="">
                             <div class="projects-cover-wrap">
                                 <img class="projects-cover-img" src="./images/porfolio/porfolio-img-9.jpg"
@@ -334,6 +337,12 @@
 
     </footer>
 
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            mirror: true
+        });
+    </script>
 </body>
 
 </html>
