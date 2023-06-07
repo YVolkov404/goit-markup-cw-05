@@ -38,6 +38,7 @@
   --footer-social-link-bg-color-hover: #31d0aa;
   --portfolio-projects-item-bg-color: #ffffff;
   --projects-cover-text-bg-color: #4d5ae5;
+
   /*  todo:
   /** button colors : text, bg & borders */
   --close-btn-icon-color: #2e2f42;
@@ -543,16 +544,11 @@ img {
   border: 1px solid var(--customers-item-border-color);
   border-radius: 4px;
   transition:
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   align-items: center;
   justify-content: center;
-}
-
-.customers-link-icon {
-  fill: currentColor;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -560,6 +556,11 @@ img {
   color: var(--customers-link-color-hover);
   border-color: var(--customers-link-border-color-hover);
   transform: scale(1.23);
+}
+
+.customers-link-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: currentColor;
 }
 
 .customers-link:hover .customers-link-icon,
@@ -641,13 +642,13 @@ img {
   fill: var(--footer-social-link-color);
 }
 
-.footer-socials-link:hover .footer-socials-icon {
-  transform: scale(.8);
-}
-
 .footer-socials-link:hover,
 .footer-socials-link:focus {
   background-color: var(--footer-social-link-bg-color-hover);
+}
+
+.footer-socials-link:hover .footer-socials-icon {
+  transform: scale(.8);
 }
 
 /* ! +++++++++++++++++++++++++++++
