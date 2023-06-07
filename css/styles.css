@@ -552,6 +552,7 @@ img {
 
 .customers-link-icon {
   fill: currentColor;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .customers-link:hover,
@@ -563,7 +564,6 @@ img {
 
 .customers-link:hover .customers-link-icon,
 .customers-link:focus .customers-link-icon {
-  border-color: var(--customers-link-border-color-hover);
   fill: currentColor;
 }
 
